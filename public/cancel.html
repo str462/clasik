@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Оплату скасовано</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #17141a;
+    --surface: #201b24;
+    --surface-border: #322b38;
+    --text-primary: #f4eef0;
+    --text-muted: #a89ba3;
+    --accent: #d99aa0;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+    min-height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 32px 20px;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: 18px;
+    padding: 48px 36px;
+    text-align: center;
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 0 12px;
+  }
+  p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 0 0 28px;
+  }
+  a.retry {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 10px;
+    background: var(--accent);
+    color: #2a1418;
+    font-weight: 600;
+    font-size: 14.5px;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Оплату скасовано</h1>
+    <p>Платіж не було завершено. Ви можете спробувати ще раз у будь-який час.</p>
+    <a class="retry" href="/">Повернутися до оплати</a>
+  </div>
+</body>
+</html>
